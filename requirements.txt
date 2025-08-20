@@ -1,1 +1,2 @@
-yt-dlp, customtkinter
+customtkinter
+yt-dlp
