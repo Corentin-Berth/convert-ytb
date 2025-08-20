@@ -32,7 +32,7 @@ jobs:
       - name: Build executable (Windows/macOS)
         if: matrix.os != 'ubuntu-latest'
         run: |
-          pyinstaller --onefile --windowed --icon=assets/icon.ico main.py
+          pyinstaller --onefile --windowed --icon=src/logo.png main.py
 
       - name: Build executable (Linux)
         if: matrix.os == 'ubuntu-latest'
