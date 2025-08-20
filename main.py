@@ -19,9 +19,14 @@ from tkinter import filedialog, messagebox
 import threading, os, sys, json, re, time
 import yt_dlp
 from PIL import Image
+from pathlib import Path
 
 APP_TITLE = "YouTube Downloader Pro"
-HISTORY_FILE = "history.json"
+
+data_dir = Path.home() / ".main.py"
+data_dir.mkdir(exist_ok=True)
+
+HISTORY_FILE = data_dir / "history.json"
 
 # ---------- Langues ----------
 LANGUAGES = {
